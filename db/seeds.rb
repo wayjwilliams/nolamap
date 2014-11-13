@@ -7,10 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-["Superdome"].each do |name|
-  # hash = Geocoder.search(name).first.data["geometry"]["location"]
-  # lat = hash["lat"]
-  # lng = hash["lng"]
+["Superdome", "New Orleans French Quarter", "New Orleans Audubon Park", "New Orleans Fabourg Marigny"].each do |name|
 
-  Point.create name: name#, lat: lat, lng: lng
+  Point.create name: name
 end
